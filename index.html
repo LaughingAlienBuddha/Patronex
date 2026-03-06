@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patronex - Support the People Who Build the Internet</title>
+    <!-- Inter/Poppins Font for Premium SaaS Look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- 72px Sticky Header -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+
+            <!-- Left Cluster: Dropdowns -->
+            <div class="nav-left desktop-only">
+                
+                <!-- Explore Mega Dropdown -->
+                <div class="nav-item">
+                    <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="explore-menu">
+                        Explore
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <!-- 900-1000px Mega Panel -->
+                    <div class="dropdown-panel mega-menu" id="explore-menu" role="menu">
+                        <div class="mega-left">
+                            <input type="text" class="mega-search" placeholder="Search creators, repos, tags..." aria-label="Search creators">
+                            <div class="mega-list">
+                                <a href="#" class="mega-item" role="menuitem">
+                                    <div class="item-content">
+                                        <div class="item-title">Designers</div>
+                                    </div>
+                                    <span class="item-info">UI/UX & Branding</span>
+                                </a>
+                                <a href="#" class="mega-item" role="menuitem">
+                                    <div class="item-content">
+                                        <div class="item-title">Developers</div>
+                                    </div>
+                                    <span class="item-info">Frontend & Backend</span>
+                                </a>
+                                <a href="#" class="mega-item" role="menuitem">
+                                    <div class="item-content">
+                                        <div class="item-title">Writers</div>
+                                    </div>
+                                    <span class="item-info">Newsletters & Tech</span>
+                                </a>
+                                <a href="#" class="mega-item" role="menuitem">
+                                    <div class="item-content">
+                                        <div class="item-title">Podcasters</div>
+                                    </div>
+                                    <span class="item-info">Audio Creators</span>
+                                </a>
+                                <a href="#" class="mega-item" role="menuitem">
+                                    <div class="item-content">
+                                        <div class="item-title">Educators</div>
+                                    </div>
+                                    <span class="item-info">Courses & Tutorials</span>
+                                </a>
+                                <a href="#" class="mega-item" role="menuitem">
+                                    <div class="item-content">
+                                        <div class="item-title">Musicians</div>
+                                    </div>
+                                    <span class="item-info">Indie Artists</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mega-right">
+                            <h4>Curated Tags</h4>
+                            <div class="tag-cloud">
+                                <a href="#" class="tag-chip">#opensource</a>
+                                <a href="#" class="tag-chip">#rustlang</a>
+                                <a href="#" class="tag-chip">#web3</a>
+                                <a href="#" class="tag-chip">#ai</a>
+                                <a href="#" class="tag-chip">#productivity</a>
+                            </div>
+                            <a href="#" class="explore-all-link">
+                                Explore all creators
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maintainers Dropdown -->
+                <div class="nav-item">
+                    <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="maintainers-menu">
+                        Open Source Maintainers
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="dropdown-panel standard-menu" id="maintainers-menu" role="menu">
+                        <a href="#" class="standard-item" role="menuitem">
+                            <span>JavaScript / TypeScript</span>
+                            <span class="pill-badge">8.2k</span>
+                        </a>
+                        <a href="#" class="standard-item" role="menuitem">
+                            <span>Python Core</span>
+                            <span class="pill-badge">4.1k</span>
+                        </a>
+                        <a href="#" class="standard-item" role="menuitem">
+                            <span>Rust Ecosystem</span>
+                            <span class="pill-badge">2.9k</span>
+                        </a>
+                        <a href="#" class="standard-item" role="menuitem">
+                            <span>Go Libraries</span>
+                            <span class="pill-badge">1.8k</span>
+                        </a>
+                        <div class="menu-footer">
+                            <a href="#" class="btn-ghost btn-small" role="menuitem">View top funded repos</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="mobile-nav-toggle" aria-label="Open Mobile Menu" aria-expanded="false" id="mobileMenuBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--brand-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <!-- Center Cluster: Logo -->
+            <a href="#" class="nav-center logo-lockup" aria-label="Patronex Home">
+                <!-- Use the SVG we generated in previous steps, fallback text for now if missing -->
+                <img src="patronex-lockup-full.svg" alt="Patronex Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 20px; color: var(--brand-dark); display: none;">Patronex</span>
+            </a>
+
+            <!-- Right Cluster: Actions -->
+            <div class="nav-right desktop-only">
+                <a href="#" class="nav-secondary-link">How it works</a>
+                <a href="#" class="nav-login">Login</a>
+                <a href="#" class="btn-primary" style="margin-left: 12px;">Sign up</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Mobile Fullscreen Menu (Hidden by default) -->
+    <div class="mobile-mega-fullscreen" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-inner">
+            <input type="text" class="mega-search mobile-search" placeholder="Search creators, repos, tags..." aria-label="Search">
+            
+            <details class="mobile-accordion">
+                <summary>Explore <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></summary>
+                <div class="accordion-content">
+                    <a href="#">Designers</a>
+                    <a href="#">Developers</a>
+                    <a href="#">Writers</a>
+                    <a href="#">Podcasters</a>
+                    <a href="#">Explore all creators</a>
+                </div>
+            </details>
+
+            <details class="mobile-accordion">
+                <summary>Open Source Maintainers <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></summary>
+                <div class="accordion-content">
+                    <a href="#">JavaScript / TypeScript</a>
+                    <a href="#">Python Core</a>
+                    <a href="#">Rust Ecosystem</a>
+                    <a href="#">View top funded repos</a>
+                </div>
+            </details>
+
+            <a href="#" class="mobile-simple-link">How it works</a>
+            <a href="#" class="mobile-simple-link">Login</a>
+            
+            <a href="#" class="btn-primary w-full text-center mobile-cta">Sign up</a>
+        </div>
+    </div>
+
+
+    <main class="hero-section">
+        <div class="hero-bg"></div>
+
+        <h1 class="hero-title">Support the People Who Build the Internet</h1>
+        <p class="hero-subtitle">Patronex helps open-source developers and creators receive recurring support through GitHub-native memberships, milestone-based sponsorships, and transparent funding.</p>
+        
+        <div class="hero-actions">
+            <a href="#" class="btn-primary">Get Started</a>
+            <a href="#" class="btn-ghost" style="background: white;">Explore Projects</a>
+        </div>
+
+        <div class="product-canvas">
+            <!-- Floating Data Mockups -->
+            <div class="canvas-card card-creator" tabindex="0" aria-label="Creator Profile Example">
+                <div class="avatar-large"></div>
+                <h3>Dr. Helena Vance</h3>
+                <p>AI Safety Researcher & Writer</p>
+                <div class="metrics-row">
+                    <div>
+                        <strong>$4.2k</strong><br>
+                        <span>/ month</span>
+                    </div>
+                    <div>
+                        <strong>842</strong><br>
+                        <span>Patrons</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="canvas-card card-repo" tabindex="0" aria-label="Open Source Repo Example">
+                <div class="repo-name">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    patronex/core-sdk
+                </div>
+                <!-- Mini Progress -->
+                <div style="width:100%; height:6px; background:var(--brand-bg-light); border-radius:3px; margin: 12px 0;">
+                    <div style="width:82%; height:100%; background:var(--brand-accent); border-radius:3px;"></div>
+                </div>
+                <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--brand-indigo);">
+                    <span>Milestone 1</span>
+                    <strong>82% Funded</strong>
+                </div>
+            </div>
+
+            <div class="canvas-card card-tiers" tabindex="0" aria-label="Membership Tiers Example">
+                <h4>Membership Tiers</h4>
+                <div class="stage-tier">
+                    <span style="font-weight:600; font-size:14px; color:var(--brand-dark);">Supporter</span>
+                    <span style="font-size:14px; color:var(--brand-indigo);">$5/mo</span>
+                </div>
+                <div class="stage-tier active">
+                    <span style="font-weight:600; font-size:14px; color:var(--brand-dark);">Sponsor</span>
+                    <span style="font-size:14px; color:var(--brand-indigo);">$15/mo</span>
+                </div>
+            </div>
+
+            <div class="canvas-card card-sponsor" tabindex="0" aria-label="Sponsorship Notification">
+                <div class="sponsor-badge">Corporate Sponsor</div>
+                <div style="font-size:13px; color:var(--brand-dark);">
+                    <strong>Acme Corp</strong> pledged $1k/mo
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scroll padding to test sticky nav -->
+    <div style="height: 100vh;"></div>
+
+    <script>
+        // Sticky Navigation Bar Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ARIA Menu Management (Desktop)
+        const dropdownTriggers = document.querySelectorAll('.nav-link[aria-haspopup="true"]');
+        
+        dropdownTriggers.forEach(trigger => {
+            trigger.addEventListener('focus', () => {
+                trigger.setAttribute('aria-expanded', 'true');
+            });
+            trigger.parentElement.addEventListener('mouseleave', () => {
+                trigger.setAttribute('aria-expanded', 'false');
+                trigger.blur();
+            });
+        });
+
+        // document escape to close menus
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                dropdownTriggers.forEach(trigger => {
+                    trigger.setAttribute('aria-expanded', 'false');
+                });
+                if(document.activeElement) document.activeElement.blur();
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileBtn.addEventListener('click', () => {
+            const isExpanded = mobileBtn.getAttribute('aria-expanded') === 'true';
+            mobileBtn.setAttribute('aria-expanded', !isExpanded);
+            
+            if (!isExpanded) {
+                mobileMenu.classList.add('open');
+                mobileMenu.removeAttribute('aria-hidden');
+                document.body.style.overflow = 'hidden'; // prevent background scroll
+            } else {
+                mobileMenu.classList.remove('open');
+                mobileMenu.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+</html>
